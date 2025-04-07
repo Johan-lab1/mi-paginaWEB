@@ -1,0 +1,535 @@
+/* Estilo global del body con fondo oscuro y texto claro */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d7d7d7; /* Fondo oscuro elegante */
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del encabezado */
+header {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Título principal */
+header h1 a {
+    margin: 0;
+    font-size: 2rem;
+    color: #ffffff;
+    box-shadow: 1px 2px 1px rgb(0, 0, 0);
+    list-style: none;
+    text-decoration: none;
+    
+}
+a:hover{
+    color: rgb(90, 90, 90);
+}
+
+/*estilos a lo que esta dentro hamburguesa*/
+#menu-hamburguesa {
+    position: absolute;
+    bottom: 750px;
+    left: 55px;
+    display: none;
+    background-color: #3b3a3a;
+    width: 300px;
+    height: 128px;
+    border-radius: 10px;
+    border: 1px solid rgb(26, 6, 145);
+    line-height: 10px; 
+    padding-bottom: 20px ;
+  }
+  /*Style a los elementos del menu*/
+  #menu-hamburguesa ul li {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 15px 0;
+    list-style: none;
+    cursor: pointer;
+    font-family:'Franklin Gothic Medium', sans-serif, sans-serif;
+    
+  }
+
+/*estilo hover para home, cursos y sobre nosotros*/
+  #menu-hamburguesa ul li:hover{
+    color: rgb(252, 252, 22);
+    font-size: 18px;
+  }
+  #menu-hamburguesa ul li a {
+    color: #edecec;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    
+  }
+  #boton-hamburguesa {
+    position: relative;
+    bottom: -50px;
+    right: 1px;
+    float: left;
+    background-color: #251f1f;
+    color: #d3d3d3;
+    font-size: 34px;
+    padding: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgb(36, 38, 38);
+    transition: background-color 0.3s ease;
+  }
+  #boton-hamburguesa:hover{
+    background-color: #ffffff;
+    color: black;
+  }
+
+/* Sección de bienvenida */
+#home {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Botón principal */
+#home button, .inscripcion {
+    display: block;
+    margin: 30px auto;
+    padding: 12px 25px;
+    font-size: 2rem;
+    background-color: #2d22cf;
+    color: #fffefe;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#home a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover del botón */
+#home button:hover , .inscripcion:hover {
+    background-color: #6385f4;
+    font-size: 2.2rem;
+    box-shadow: 2px 2px 4px rgb(17, 16, 34);
+}
+
+/* Carrusel de cursos */
+#carousel {
+    display: block;
+    overflow-x: scroll; /* Desplazamiento horizontal */
+    scroll-behavior: smooth;
+    padding: 50px;
+    gap: 20px;
+    margin: 20px 0;
+    background: linear-gradient(135deg, #d6d6d6, #ffeded); /* Fondo atractivo */
+    width: 100%;
+    justify-items: center;
+}
+
+/* Oculta scrollbar para estética */
+#carousel::-webkit-scrollbar {
+    display: none; !important
+}
+
+/* Estilo de cada curso en el carrusel */
+.curso {
+    flex: 0 0 auto; /* No se redimensiona, ocupa su espacio */
+    background-color: #bcb5b5;
+    color: #e0e0e0;
+    padding: 10px 60px;
+    border-radius: 15px;
+    min-width: 964px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 1px 3px 12px rgb(35, 10, 102);
+    transition: transform 0.4s;
+    font-size: 26px;
+    margin: 15px ;
+    width: 400px;
+}
+
+/*Diseno del titulo curso nuestros cursos*/
+.titulo-cursos{
+    font-size: 36px;
+    color: black;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+.curso:hover {
+    transform: scale(1.05); /* Efecto zoom al pasar el ratón */
+    font-size: 26px;
+    border: 1px solid #373644;
+    
+}
+
+#imagenes .imagenes-cursos {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    margin: 30px 0px;
+    
+}
+
+
+/* Estilo para las imágenes del carrusel */
+.imagenes-cursos img {
+    width: 280px; /* Puedes ajustar según tu gusto (ej: 150px, 180px...) */
+    height: 250px;
+    object-fit: cover; /* Recorta y ajusta sin deformar */
+    border-radius: 8px;
+    margin: 50px;
+    box-shadow: 2px 2px 6px rgba(22, 11, 42, 0.5);
+    padding: 5px;
+
+}
+
+#imagenes, .imagenes-cursos p{
+    text-align: center;
+    font-size: 26px;
+    
+}
+
+/* Sección Sobre Nosotros */
+#sobre-nosotros {
+    background-color: #f0f0f0;
+    color: #222;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#sobre-nosotros h2, #sobre-nosotros h3 {
+    font-size: 32px;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+}
+
+#sobre-nosotros p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
+}
+
+#sobre-nosotros ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#sobre-nosotros ul li {
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #dedede;
+    border-radius: 8px;
+}
+
+/* Sección Presentación */
+#presentacion {
+    background: linear-gradient(135deg, #ececec, #dcdcdc);
+    color: #1e1e1e;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#presentacion h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#presentacion h3 {
+    font-size: 26px;
+    color: #555;
+    margin-top: 30px;
+}
+
+#presentacion p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    line-height: 1.6;
+}
+
+/* Sección Contacto */
+#contacto {
+    background-color: #eeeeee;
+    padding: 50px 20px;
+    text-align: center;
+    color: #111;
+    
+}
+#contacto p{
+    margin-top: 80px;
+    line-height: 1.2;
+    
+}
+#contacto a{
+    text-decoration: none;
+}
+
+#contacto h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    
+}
+
+#contacto form {
+    max-width: 60%;
+    margin: 0 auto;
+    text-align: left;
+   
+}
+
+#contacto label {
+    display: block;
+    margin-bottom: 1px;
+    font-weight: bold;
+   
+}
+
+#contacto input, 
+#contacto textarea {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+
+#contacto button {
+    background-color: #2d22cf;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: absolute;
+    left: 45%;
+    
+}
+
+#contacto button:hover {
+    background-color: #5363f0;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #ddd;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 16px;
+}
+
+footer a {
+    color: #a0c4ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .redes-sociales {
+    margin: 20px 0;
+}
+
+/* ======== RESPONSIVE MOBILE ======== */
+@media screen and (max-width: 768px) {
+    header nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+  
+    .menu li {
+      width: 100%;
+      text-align: left;
+      padding: 10px;
+    }
+  
+    .menu li a {
+      display: block;
+      width: 100%;
+    }
+  
+    .menu.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  
+    /* Ajustes para el home */
+    .home-section {
+      height: auto;
+      padding: 100px 20px;
+    }
+  
+    .home-content h1 {
+      font-size: 2rem;
+    }
+  
+    .home-content p {
+      font-size: 1.1rem;
+    }
+  
+    .btn-home {
+      font-size: 1rem;
+      padding: 10px 20px;
+    }
+  
+    /* Carrusel en móviles */
+    .carousel {
+      height: 200px; /* más pequeño */
+    }
+  
+    .carousel-slide img {
+      height: 100%;
+      object-fit: cover;
+    }
+  
+    /* Footer responsivo */
+    footer {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  /* ===== MODO OSCURO ===== */
+body.modo-oscuro {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.modo-oscuro header {
+    background-color: #1f1f1f;
+}
+
+body.modo-oscuro #menu-hamburguesa {
+    background-color: #2a2a2a;
+    border-color: #4a4a4a;
+}
+
+body.modo-oscuro a {
+    color: #a0c4ff;
+}
+
+body.modo-oscuro a:hover {
+    color: #ffffff;
+}
+
+body.modo-oscuro .curso {
+    background-color: #2d2d2d;
+    color: #ddd;
+}
+
+body.modo-oscuro #sobre-nosotros,
+body.modo-oscuro #presentacion,
+body.modo-oscuro #contacto {
+    background-color: #1a1a1a;
+    color: #ddd;
+}
+
+body.modo-oscuro #sobre-nosotros ul li,
+body.modo-oscuro #contacto input,
+body.modo-oscuro #contacto textarea {
+    background-color: #2b2b2b;
+    color: #f0f0f0;
+    border-color: #555;
+}
+
+body.modo-oscuro footer {
+    background-color: #101010;
+    color: #aaa;
+}
+
+body.modo-oscuro #contacto button {
+    background-color: #3f51b5;
+}
+
+/* ===== DETALLES PULIDOS ===== */
+header {
+    transition: background-color 0.3s ease;
+}
+
+.curso {
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#home button, .inscripcion {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#home button:hover , .inscripcion:hover {
+    box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+}
+
+#boton-hamburguesa {
+    transition: all 0.3s ease;
+}
+
+/* Ajuste a inputs y formularios para ambos modos */
+#contacto input:focus, 
+#contacto textarea:focus {
+    outline: none;
+    border: 2px solid #2d22cf;
+}
+
+/* Transiciones suaves para modo oscuro */
+body,
+header,
+.curso,
+#sobre-nosotros,
+#presentacion,
+#contacto,
+footer,
+#menu-hamburguesa {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+  /* Estilos para el botón Modo Oscuro */
+#boton-modo-oscuro {
+    position: fixed; /* Lo coloca en una posición fija */
+    top: 20px; /* Espacio desde la parte superior */
+    right: 20px; /* Espacio desde la parte derecha */
+    background-color: #2d22cf; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin bordes */
+    padding: 10px 20px; /* Espaciado dentro del botón */
+    font-size: 18px; /* Tamaño de la fuente */
+    border-radius: 45px; /* Bordes redondeados */
+    cursor: pointer; /* Apunta el cursor como puntero */
+    transition: background-color 0.3s ease; /* Efecto suave al pasar el ratón */
+}
+
+#boton-modo-oscuro:hover {
+    background-color: #446bd6; /* Cambia el color al pasar el ratón */
+}
+
+#boton-modo-oscuro:focus {
+    outline: none; /* Elimina el borde de enfoque al hacer clic */
+}
